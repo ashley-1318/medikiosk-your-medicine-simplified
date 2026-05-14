@@ -1,0 +1,22 @@
+# Root gitignore for monorepo structure
+
+# Both workspaces — never commit node_modules or envs
+node_modules/
+.env
+*.local
+
+# Frontend build outputs
+frontend/dist/
+frontend/.tanstack/
+frontend/.wrangler/
+
+# Backend temp files
+backend/uploads/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
